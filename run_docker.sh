@@ -11,4 +11,4 @@ docker build --tag=app-4 .
 docker images 
 # Step 3: 
 # Run flask app
-docker run -p 8888:80 app 
+docker run -p 8888:80 app-4 
