@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=ahmedbendo/app-4
+dockerpath=ahmedbendo/udacity-app-4
 
 # Step 2:
 # Authenticate & tag
