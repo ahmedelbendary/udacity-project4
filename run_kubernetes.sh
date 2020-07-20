@@ -9,8 +9,12 @@ dockerpath=ahmedbendo/udacity-app-4
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment kubernetes-app-4 --image=ahmedbendo/udacity-app-4
-
+#kubectl create deployment kubernetes-app-4 --image=ahmedbendo/udacity-app-4
+kubectl run kubernetes-app-4\
+    --generator=run-pod/v1\
+    --image=$dockerpath\
+    --port=80 --labels app=kubernetes-app-4
+    
 # Step 3:
 # List kubernetes pods
 kubectl get pods 
